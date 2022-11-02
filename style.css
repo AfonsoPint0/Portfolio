@@ -74,6 +74,9 @@ header {
   width: 40px;
   margin: 0 5px;
 }
+.td-none {
+  text-decoration: none;
+}
 /* End Tools */
 
 /* Navbar */
@@ -152,7 +155,6 @@ nav h1 {
   background: var(--secondary);
   overflow: hidden;
   margin-bottom: 2rem;
-  object-fit: cover;
   object-position: center;
   transition: all 0.2s ease-in-out;
 }
@@ -244,31 +246,31 @@ nav h1 {
 }
 /* End About */
 
-/* Services */
-.services {
+/* knowledge */
+.knowledge {
   padding: 50px 5px;
   background-color: var(--secondary);
 }
-.services-heading {
+.knowledge-heading {
   font-size: 5rem;
   text-transform: uppercase;
   color: var(--white);
   text-align: center;
   margin-bottom: 2rem;
 }
-.services-content {
+.knowledge-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-.services-icons {
+.knowledge-icons {
   display: flex;
 }
-.services-content img {
+.knowledge-content img {
   width: 40px;
   margin: 0 5px;
 }
-.services-box {
+.knowledge-box {
   color: var(--white);
   display: flex;
   flex-direction: column;
@@ -279,25 +281,25 @@ nav h1 {
   border: solid 1px var(--primary);
   transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.services-box:hover {
+.knowledge-box:hover {
   transform: scale(1.05);
 }
-.services-box .bx {
+.knowledge-box .bx {
   font-size: 1.8rem;
   padding: 10px;
   border-radius: 5rem;
   border: 2px dashed var(--primary);
 }
-.services-box h2 {
+.knowledge-box h2 {
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0.5rem 0;
   color: var(--primary);
 }
-.services-box p {
+.knowledge-box p {
   font-size: 0.9rem;
 }
-/* End Services */
+/* End knowledge */
 
 /* Experience */
 .experience {
@@ -405,14 +407,14 @@ nav h1 {
   }
   /* End About */
 
-  /* Services */
-  .services-content {
+  /* knowledge */
+  .knowledge-content {
     grid-template-columns: repeat(1, 1fr);
   }
-  .services-heading {
+  .knowledge-heading {
     font-size: 4rem;
   }
-  /* End services */
+  /* End knowledge */
 
   /* Experience */
   .experience-heading {
