@@ -591,6 +591,12 @@ nav h1 {
     grid-template-columns: repeat(4, 1fr);
   }
   /* End Experience */
+  .modal-content p{
+    padding: 5px;
+  }
+  .modal-content a{
+    font-size: 0.9rem;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 768px){
