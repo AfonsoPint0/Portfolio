@@ -148,7 +148,9 @@ nav h1 {
 .home-img {
   width: 180px;
   height: 180px;
-  background: #98a7fc;
+  border-radius: 50%;
+  background: var(--secondary);
+  overflow: hidden;
   margin-bottom: 2rem;
   object-fit: cover;
   object-position: center;
