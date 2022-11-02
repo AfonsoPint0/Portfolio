@@ -66,6 +66,10 @@ header {
 .td-none {
   text-decoration: none;
 }
+
+.d-none{
+  display: none;
+}
 /* End Tools */
 
 /* Text */
@@ -129,10 +133,14 @@ nav h1 {
   transition: all 0.3s ease-in-out;
   background: var(--white);
 }
-.border {
-  border-bottom: 3px solid var(--primary);
+.overlay{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 90;
 }
 /* End Navbar */
+
 /* Home */
 .home {
   background: var(--secondary);
@@ -341,7 +349,7 @@ nav h1 {
 }
 .technologies-img {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 .technologies-img img {
   width: 40px;
@@ -580,8 +588,7 @@ nav h1 {
     padding: 5px 10px;
   }
   .technologies-img {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   /* End Experience */
 }
@@ -607,10 +614,6 @@ nav h1 {
   /* End knowledge */
   
   /* Experience */
-  .technologies-img {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
   /* End Experience */
 }
 
