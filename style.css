@@ -27,6 +27,10 @@ header {
 }
 
 /* Tools */
+.bold{
+  font-weight: bold;
+}
+
 .social {
   display: flex;
   align-items: center;
@@ -69,6 +73,10 @@ header {
 
 .d-none{
   display: none;
+}
+
+.bb-primary{
+  border-bottom: 1px solid var(--primary);
 }
 /* End Tools */
 

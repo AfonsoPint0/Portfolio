@@ -2,6 +2,7 @@
 
 /* Get Navbar */
 const hamburger = document.querySelector(".hamburger");
+const navbar = document.querySelector(".navbar");
 const navMenu = document.querySelector(".nav-menu");
 const header = document.getElementById("head");
 const overlay = document.querySelector(".overlay");
@@ -12,30 +13,24 @@ var btn = document.getElementById("show-modal");
 var span = document.getElementsByClassName("close")[0];
 
 /* Navbar */
-hamburger.addEventListener("click", () => {
+let toggleNavbar = function() {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
   overlay.classList.toggle("d-none");
-});
+}
+
+hamburger.addEventListener("click", toggleNavbar);
 
 document.querySelectorAll(".nav-link").forEach((n) =>
-  n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-    overlay.classList.toggle("d-none");
-  })
+  n.addEventListener("click", toggleNavbar)
 );
 
-overlay.addEventListener("click", () => {
-  navMenu.classList.remove("active");
-  hamburger.classList.remove("active");
-  overlay.classList.toggle("d-none");
-})
+overlay.addEventListener("click", toggleNavbar)
 
 window.addEventListener("scroll", function () {
   window.pageYOffset > 100
-    ? header.classList.add("border")
-    : header.classList.remove("border");
+    ? header.classList.add("bb-primary")
+    : header.classList.remove("bb-primary");
 });
 
 /* Modal */
