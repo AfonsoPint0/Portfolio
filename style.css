@@ -147,7 +147,6 @@ nav h1 {
     height: 100%;
     width: 100%;
     z-index: 90;
-    backdrop-filter: blur(6px);
 }
 /* End Navbar */
 
