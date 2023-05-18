@@ -147,6 +147,7 @@ nav h1 {
     height: 100%;
     width: 100%;
     z-index: 90;
+    backdrop-filter: blur(6px);
 }
 /* End Navbar */
 
@@ -608,9 +609,15 @@ nav h1 {
   }
 }
 
+@media (min-width: 600px){
+  .overlay{
+    display: none;
+  }
+}
+
 @media (min-width: 601px) and (max-width: 768px){
     /* Text */
-    .dark-heading{
+  .dark-heading{
     font-size: 3rem;
   }
   .light-heading{

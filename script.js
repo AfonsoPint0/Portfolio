@@ -1,18 +1,13 @@
 "use strict";
-
-/* Get Navbar */
 const hamburger = document.querySelector(".hamburger");
 const navbar = document.querySelector(".navbar");
 const navMenu = document.querySelector(".nav-menu");
 const header = document.getElementById("head");
 const overlay = document.querySelector(".overlay");
-
-/* Get Modal */
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("show-modal");
 var span = document.getElementsByClassName("close")[0];
 
-/* Navbar */
 let toggleNavbar = function() {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
@@ -33,7 +28,6 @@ window.addEventListener("scroll", function () {
     : header.classList.remove("bb-primary");
 });
 
-/* Modal */
 btn.onclick = function () {
   modal.style.display = "block";
 };
